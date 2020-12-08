@@ -64,6 +64,7 @@
                     android:layout_width="187dp"
                     android:layout_height="121dp"
                     android:layout_marginTop="16dp"
+                    android:onClick="Prestamos"
                     app:layout_constraintBottom_toBottomOf="@+id/imageButton1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageButton1"

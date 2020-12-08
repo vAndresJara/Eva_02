@@ -11,6 +11,7 @@
         android:id="@+id/button3"
         android:layout_width="243dp"
         android:layout_height="60dp"
+        android:onClick="calDeuda"
         android:text="Calcular Deuda"
         android:textSize="18sp"
         app:backgroundTint="#A39E9E"
@@ -18,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/spinPr"
         app:layout_constraintVertical_bias="0.734" />
 
     <ImageView
@@ -34,7 +35,7 @@
         app:srcCompat="@drawable/dinero" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinCl"
         android:layout_width="352dp"
         android:layout_height="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,32 +46,33 @@
         app:layout_constraintVertical_bias="0.065" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinPr"
         android:layout_width="352dp"
         android:layout_height="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinCl"
         app:layout_constraintVertical_bias="0.076" />
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="98dp"
-        android:layout_height="45dp"
+        android:id="@+id/tvRes"
+        android:layout_width="142dp"
+        android:layout_height="76dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintTop_toBottomOf="@+id/spinPr"
+        app:layout_constraintVertical_bias="0.221" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="243dp"
         android:layout_height="60dp"
+        android:onClick="calPrestamo"
         android:text="Calcular Prestamo"
         android:textSize="18sp"
         app:backgroundTint="#A39E9E"
@@ -78,6 +80,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/spinPr"
         app:layout_constraintVertical_bias="0.504" />
 </androidx.constraintlayout.widget.ConstraintLayout>

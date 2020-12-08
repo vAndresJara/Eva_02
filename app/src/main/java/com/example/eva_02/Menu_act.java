@@ -8,6 +8,8 @@ import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
+
 public class Menu_act extends AppCompatActivity {
 
 
@@ -55,6 +57,26 @@ public class Menu_act extends AppCompatActivity {
     {
         Intent s = new Intent(this, Seguridad_act.class);
         startActivity(s);
+    }
+
+    public void Prestamos(View v)
+    {
+        ArrayList<String> Cliente =  new ArrayList<>();
+        ArrayList<String> Prestamos = new ArrayList<>();
+
+        Cliente.add("AXEL");
+        Cliente.add("ROXANA");
+        Cliente.add("BETZABE");
+        Cliente.add("MATIAS");
+        Prestamos.add("Hipotecario");
+        Prestamos.add("Automotriz");
+
+        Intent i = new Intent(this, Prestamos_act.class);
+        i.putExtra("listaCliente", Cliente);
+        i.putExtra("listaPrestamos",Prestamos);
+        startActivity(i);
+
+
     }
 
 
