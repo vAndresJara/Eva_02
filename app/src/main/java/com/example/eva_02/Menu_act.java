@@ -59,6 +59,12 @@ public class Menu_act extends AppCompatActivity {
         startActivity(s);
     }
 
+    public void Gestion(View v)
+    {
+        Intent g = new Intent(this, Gestion_act.class);
+        startActivity(g);
+    }
+
     public void Prestamos(View v)
     {
         ArrayList<String> Cliente =  new ArrayList<>();
